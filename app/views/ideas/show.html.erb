@@ -8,7 +8,7 @@
   <strong>Description:</strong>
   <%= naughty_filter(@idea.description) %>
 </p>
-
+Coolness  : <%= rating_for @idea, 'coolness', star: 5 %>
 <p>
   <strong>Picture:</strong>
   <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
