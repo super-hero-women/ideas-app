@@ -1,4 +1,5 @@
 describe Idea do
+
     it "has a name" do
         idea = Idea.create!(name: "hello")
         expect(idea.name).to eq("hello")
@@ -9,7 +10,3 @@ describe Idea do
         expect(idea.description).to eq("yellow, yellow")
     end    
 end     
-
-
-   
-    

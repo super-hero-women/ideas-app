@@ -24,7 +24,20 @@ RSpec.describe IdeasHelper, type: :helper do
       expect(naughty_filter("I like poop")).to eq('I like heck')
     end
 
-    it "filters out many naughtly words" do
+    it "filters out many naughty words" do
+
+      expect(naughty_filter("poop")).to eq ("heck")
+    end
+
+    it "does not filter nice words" do
+      expect(naughty_filter("I like cats")).to eq("I like cats")
+    end
+
+    it "filters out only naughty words" do
+      expect(naughty_filter("I like poop")).to eq("I like heck")
+    end
+
+    it "filters out many naughty words" do
       expect(naughty_filter("poop poop")).to eq("heck heck")
     end
 
@@ -34,6 +47,10 @@ RSpec.describe IdeasHelper, type: :helper do
 
      it "filters out uppercase words" do
       expect(naughty_filter("pooP POOP Poop")).to eq("heck heck heck")
+    end
+
+    it "filters out uppercase words" do
+      expect(naughty_filter("poop Poop POOP PoOp")).to eq("heck heck heck heck")
     end
   end
 end
