@@ -19,7 +19,8 @@
       <tr>
         <td class="name-column"><%= naughty_filter(idea.name) %></td>
         <td class="description-column"><%= naughty_filter(idea.description) %></td>
-        <td><%= image_tag(@idea.picture_url, width: 350) if @idea.picture.present? %></td>
+        <td><%= idea.picture %>
+          <%= image_tag(@idea.picture_url, width: 350) if @idea.picture.present? %></td>
         <td><%= link_to 'Show', idea %></td>
         <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
         <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
