@@ -16,7 +16,7 @@
   <tbody>
     <% @ideas.each do |idea| %>
       <tr>
-        <td><%= naughty_filter(idea.name) %></td>
+        <td class='name-column'><%= naughty_filter(idea.name) %></td>
         <td><%= naughty_filter(idea.description) %></td>
         <td><%= idea.picture %></td>
         <td><%= link_to 'Show', idea %></td>
