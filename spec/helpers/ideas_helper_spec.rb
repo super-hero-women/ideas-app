@@ -13,6 +13,19 @@ require 'rails_helper'
 RSpec.describe IdeasHelper, type: :helper do
   describe "naughty_filter" do
     it "filters poop" do
+      expect(naughty_filter("poop")).to eq("heck")
+    end
+
+    it "does not filter nice words" do
+      expect(naughty_filter('i like cats')).to eq('i like cats')
+    end
+
+    it "filters out only naughty words" do
+      expect(naughty_filter("I like poop")).to eq('I like heck')
+    end
+
+    it "filters out many naughty words" do
+
       expect(naughty_filter("poop")).to eq ("heck")
     end
 
@@ -29,12 +42,15 @@ RSpec.describe IdeasHelper, type: :helper do
     end
 
     it "filters butt" do
-      expect(naughty_filter("Here is a cigarette butt")).to eq("Here is a cigarette heck")
+      expect(naughty_filter("here is a cigarette butt")).to eq("here is a cigarette heck")
+    end
+
+     it "filters out uppercase words" do
+      expect(naughty_filter("pooP POOP Poop")).to eq("heck heck heck")
     end
 
     it "filters out uppercase words" do
       expect(naughty_filter("poop Poop POOP PoOp")).to eq("heck heck heck heck")
     end
-
   end
 end

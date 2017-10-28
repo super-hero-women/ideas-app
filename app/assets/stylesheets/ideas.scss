@@ -1,3 +1,16 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// SELECTOR {
+//   property: value;
+// }
+
+table {
+  border: 8px dotted ghostwhite;
+  padding: 11px;
+  color: green;
+}
+h2 {
+  color: blue;
+}
+//to make a class write . before the class name. This will make a class but wont define what is a class//

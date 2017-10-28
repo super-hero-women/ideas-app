@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20171028222443) do
 
   create_table "average_caches", force: :cascade do |t|
@@ -23,12 +24,13 @@ ActiveRecord::Schema.define(version: 20171028222443) do
     t.index ["rater_id"], name: "index_average_caches_on_rater_id"
   end
 
+
   create_table "comments", force: :cascade do |t|
-    t.string "user_name"
-    t.text "body"
+    t.text "description"
     t.integer "idea_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["idea_id"], name: "index_comments_on_idea_id"
   end
 
   create_table "ideas", force: :cascade do |t|

@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
-  resources :comments
   root to: "ideas#index"
 
-  resources :ideas
+  resources :ideas do
+    resources :comments
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

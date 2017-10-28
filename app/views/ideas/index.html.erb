@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1> My Ideas</h1>
-
-<table>
+<h1>Ideas</h1>
+<h2>Hello, welcome to my page :) </h2>
+<table class ='table'>
   <thead>
     <tr>
       <th>Name</th>
@@ -16,7 +16,7 @@
   <tbody>
     <% @ideas.each do |idea| %>
       <tr>
-        <td><%= naughty_filter(idea.name) %></td>
+        <td class='name-column'><%= naughty_filter(idea.name) %></td>
         <td><%= naughty_filter(idea.description) %></td>
         <td><%= idea.picture %></td>
         <td><%= link_to 'Show', idea %></td>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Idea', new_idea_path %>
+<%= link_to 'New Idea', new_idea_path, class: 'btn btn-outline-danger btn-lg btn-block' %>
