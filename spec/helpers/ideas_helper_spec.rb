@@ -11,5 +11,22 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe IdeasHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "naughty_filter" do
+    it "filters poop" do
+      expect(naughty_filter("poop")).to eq ("heck")
+    end
+
+    it "does not filter nice words" do
+      expect(naughty_filter("I like cats")).to eq("I like cats")
+    end
+
+    it "filters out only naughty words" do
+      expect(naughty_filter("I like poop")).to eq("I like heck")
+    end
+
+    it "filters out many naughty words" do
+      expect(naughty_filter("poop poop")).to eq("heck heck")
+    end
+
+  end
 end
