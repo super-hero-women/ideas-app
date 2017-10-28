@@ -2,18 +2,18 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @idea.name %>
+  <%= naughty_filter(@idea.name) %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= @idea.description %>
+  <%= naughty_filter(@idea.description) %>
 </p>
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
+  <%= image_tag(@idea.picture_url, width: 350) if @idea.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+<%= link_to 'List', ideas_path %>
