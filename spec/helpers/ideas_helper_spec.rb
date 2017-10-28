@@ -28,5 +28,9 @@ RSpec.describe IdeasHelper, type: :helper do
       expect(naughty_filter("poop poop")).to eq("heck heck")
     end
 
+    it "filters butt" do
+      expect(naughty_filter("Here is a cigarette butt")).to eq("Here is a cigarette heck")
+    end
+
   end
 end
