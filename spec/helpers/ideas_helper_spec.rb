@@ -27,5 +27,13 @@ RSpec.describe IdeasHelper, type: :helper do
     it "filters out many naughtly words" do
       expect(naughty_filter("poop poop")).to eq("heck heck")
     end
+
+    it "filters butt" do
+      expect(naughty_filter("here is a cigarette butt")).to eq("here is a cigarette heck")
+    end
+
+     it "filters out uppercase words" do
+      expect(naughty_filter("pooP POOP Poop")).to eq("heck heck heck")
+    end
   end
 end

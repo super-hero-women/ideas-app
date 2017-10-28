@@ -1,9 +1,11 @@
 module IdeasHelper
     def naughty_filter(string)
-        if string.include?('poop')
-            return string.gsub('poop','heck')
-        else
+        if string.downcase.include?('poop')
+           string = string.gsub(/poop/i,'heck')
+        end 
+        if string.include?('butt')
+            string = string.gsub(/butt/i,'heck')
+        end
             return string
         end 
     end
-end
