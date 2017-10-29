@@ -43,9 +43,7 @@ GEM
     arel (8.0.0)
     autoprefixer-rails (7.1.6)
       execjs
-
     bcrypt (3.1.11)
-
     bindex (0.5.0)
     bootstrap (4.0.0.beta2.1)
       autoprefixer-rails (>= 6.0.3)
@@ -259,11 +257,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-<<<<<<< HEAD
    ruby 2.4.1p111
-=======
-   ruby 2.4.2p198
->>>>>>> styling-changes
 
 BUNDLED WITH
    1.16.0.pre.3

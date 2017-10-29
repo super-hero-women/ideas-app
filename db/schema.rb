@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20171028222443) do
 
   create_table "average_caches", force: :cascade do |t|
@@ -23,7 +22,6 @@ ActiveRecord::Schema.define(version: 20171028222443) do
     t.index ["rateable_type", "rateable_id"], name: "index_average_caches_on_rateable_type_and_rateable_id"
     t.index ["rater_id"], name: "index_average_caches_on_rater_id"
   end
-
 
   create_table "comments", force: :cascade do |t|
     t.text "description"
