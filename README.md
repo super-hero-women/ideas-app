@@ -1,3 +1,16 @@
+Project 'Super-hero-woman-production'
+2 hours Team Project created on Rails Girls workshop
+
+Authors: Nanz, Skye, Cat and Magda
+
+You'll find us online  https://super-hero-woman-production.herokuapp.com/
+
+We used Ideas App made by following http://guides.railsgirls.com/app to start with and we added new features:
+comments, rating, styling(Bootstrap). We wrote some tests(TDD) as well:)
+
+
+
+
 # Ideas App
 
 Finished app made by following http://guides.railsgirls.com/app
@@ -149,4 +162,3 @@ and see your very own app running
 To run the suite of automated tests, run:
 
     $ bundle exec rspec
-
