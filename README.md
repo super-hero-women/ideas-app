@@ -8,7 +8,7 @@ You'll find us online  https://super-hero-woman-production.herokuapp.com/
 
 We used Ideas App made by following http://guides.railsgirls.com/app to start with and we added new features:
 
-comments, rating, styling(Bootstrap). We wrote some tests(TDD) as well:)
+comments, rating, styling (Bootstrap). We wrote some tests (TDD) as well:)
 
 
 
