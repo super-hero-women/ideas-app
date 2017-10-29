@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 @import "custom";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 @import "ideas";
-
-h1 { color: $danger; }
-
-body {
-    background-image:url('http://www.myfreetextures.com/wp-content/uploads/2014/10/old-parchment-paper-with-flowers.jpg');
-    background-size: cover;
-}
+h1 {color: $primary}
