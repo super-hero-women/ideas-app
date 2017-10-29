@@ -1,4 +1,4 @@
-Project 'Super-hero-woman-production'
+Project 'Super-Hero-Woman-Production'
 
 2 hours Team Project created on Rails Girls workshop
 
