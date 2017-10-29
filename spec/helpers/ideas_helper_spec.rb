@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 # Specs in this file have access to a helper object that includes
 # the IdeasHelper. For example:
@@ -10,6 +10,7 @@ require 'rails_helper'
 #     end
 #   end
 # end
+
 RSpec.describe IdeasHelper, type: :helper do
   describe "naughty_filter" do
     it "filters poop" do
@@ -51,6 +52,7 @@ RSpec.describe IdeasHelper, type: :helper do
 
     it "filters out uppercase words" do
       expect(naughty_filter("poop Poop POOP PoOp")).to eq("heck heck heck heck")
+
     end
   end
 end
